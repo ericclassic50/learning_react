@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style/index.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <h3>Firstie Deluxe</h3>
+            <i class="fa-solid fa-ice-cream"></i>
+        </div>
+
+        <div class="navbar">
+            <div class="sidemenu">
+                <ul>
+                    <li>
+                        <a href="./icecream.html">Ice-cream</a>
+                    </li>
+                    <li>
+                        <a href="./cake.html">Cakes</a>
+                    </li>
+                    <li class="drop_down">
+                        <div class="categories">
+                            <span>Categories</span>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                        <div class="list-categories">
+                            <a href="./vanilla.html">Vanilla Flavour</a>
+                            <a href="./chocolate.html">Chocolate Flavour</a>
+                            <a href="./mint.html">Mint Flavour</a>
+                            <a href="./fruit.html">Fruit Flavour</a>
+                            <a href="./vegan.html">Vegan Flavour</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="burger_cart">
+                <div class="cart_no">
+                    <a href="">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <small><span class="totalItem">0</span></small>
+                    </a>
+                </div>
+                <div class="burger">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section>
+            <div class="cart_items">
+                <div class="all_items">
+                    <div class="no_cart">
+                        <h3>Your cart is empty</h3>
+                        <button>Go to menu</button>
+                    </div>
+                </div>
+
+                <div class="cart_checkout">
+                    <div class="check_head">
+                        <h3>Carts</h3>
+                    </div>
+                    <div class="cart_item_length">
+                        <span>Items:</span>
+                        <span id="checkout_length"></span>
+                    </div>
+                    <div class="cart_total">
+                        <span>Total</span>
+                        <span class="totalCount"></span>
+                    </div>
+                    <div class="cart_checkout_btn">
+                        <button class="btnCheck"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="pop_form">
+            <form action="" class="frm_email">
+                <div class="close-form">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <div class="frm_inps">
+                    <div class="inp_ctrl">
+                        <label for="">Email address:</label>
+                        <input type="email" placeholder="email247@gmail.com" id="email" required>
+                    </div>
+                </div>
+                <div class="frm_btn">
+                    <button id="subForm">Proceed to order</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="news-letter">
+            <h3>Sign up To recieve more of our delicious combos</h3>
+            <form action="" class="sub">
+                <input type="email" placeholder="johndoe@gmail.com">
+                <button>Submit</button>
+            </form>
+        </div>
+        <div class="foot_body">
+            <div class="contact">
+                <div class="info">
+                    <h4>Email:</h4>
+                    <p>akalmin247@gmail.com</p>
+                </div>
+                <div class="info">
+                    <h4>Phone Address:</h4>
+                    <p>+1-234-345-5678</p>
+                </div>
+                <div class="info">
+                    <h4>Location:</h4>
+                    <p>24, Iyana-paja</p>
+                </div>
+            </div>
+            <div class="socials">
+                <div class="link">
+                    <a href="">Facebook</a>
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+                <div class="link">
+                    <a href="">Instagram</a>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="link">
+                    <a href="">Twitter</a>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+            <div class="pages">
+                <div class="list-page">
+                    <a href="">Home page</a>
+                </div>
+                <div class="list-page">
+                    <a href="">Ice-cream</a>
+                </div>
+                <div class="list-page">
+                    <a href="">Cakes</a>
+                </div>
+            </div>
+        </div>
+        <div class="foot_bottom">
+            <p>Copyright &copy; of Firstie Deluxe</p>
+        </div>
+    </footer>
+
+    <script src="./javascript/checkout.js"></script>
+    <script src="./javascript/nav.js"></script>
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+</body>
+
+</html>

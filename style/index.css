@@ -1,0 +1,544 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav,
+.logo,
+.navbar,
+.sidemenu ul,
+.burger_cart,
+.categories,
+.bg-img,
+.cat-list ul {
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    justify-content: space-between;
+    padding: 0 3rem;
+    width: 100%;
+    height: 100px;
+    background-color: #4f2811;
+    color: #ffffff;
+}
+
+.logo {
+    gap: 10px;
+}
+
+.navbar {
+    gap: 300px;
+}
+
+.sidemenu ul,
+.cat-list ul {
+    gap: 20px;
+    list-style-type: none;
+}
+
+.sidemenu ul li a,
+.cart_no a,
+.cat-list ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #ffffff;
+    transition: color .7s linear;
+}
+
+.sidemenu ul li a:hover {
+    color: #fc5a8d;
+}
+
+.list-categories {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    padding: 10px;
+    background-color: #4f2811;
+    border-radius: 10px;
+    position: absolute;
+    top: 20px;
+    right: -100vw;
+    transition: right 1s linear;
+    z-index: 2;
+}
+
+.list-categories a {
+    display: block;
+    line-height: 30px;
+    width: 100%;
+}
+
+.drop_down {
+    position: relative;
+    overflow: hidden;
+
+}
+
+.categories {
+    gap: 10px;
+    cursor: pointer;
+}
+
+.drop_down:hover {
+    overflow: visible;
+}
+
+.drop_down:hover .list-categories {
+    right: -80px;
+}
+
+.cart_no a {
+    position: relative;
+}
+
+.cart_no a i {
+    color: #fc5a8d;
+    font-size: 20px;
+}
+
+.cart_no a small {
+    position: absolute;
+    top: -10px;
+    right: -2px;
+    font-weight: 700;
+    display: block;
+    padding: 2px 5px;
+    border-radius: 50%;
+    background-color: black;
+    font-size: 10px;
+}
+
+.burger {
+    display: none;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://sugargeekshow.com/wp-content/uploads/2021/03/oreo_icecream_cake_recipe_featured.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.bg-img {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.401);
+    color: white;
+    padding: 30px;
+}
+
+.bg-img h1 {
+    font-size: 70px;
+    margin-bottom: 2rem;
+}
+
+.bg-img h3 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.btns {
+    display: flex;
+    gap: 20px;
+}
+
+.btns button {
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: #fc5a8d;
+    color: white;
+    font-weight: 800;
+}
+
+.btns button:first-child {
+    background-color: transparent;
+    border: 3px solid #fc5a8d;
+    color: #fc5a8d;
+}
+
+.categories_main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    align-items: center;
+    padding: 1rem 3rem;
+    background-color: #4f2811;
+    color: #ffffff;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.categories_main h3 {
+    font-size: 30px;
+    margin-bottom: 1.5rem;
+}
+
+.cat-list li a img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.cat-list li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.cat-list ul {
+    gap: 50px;
+}
+
+.icecream,
+.cake {
+    display: flex;
+    gap: 50px;
+    width: 100%;
+    padding: 3rem;
+}
+
+.icecream-img,
+.cake-img {
+    width: 50%;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: -10px 10px 4px 0 #4f2811;
+}
+
+.icecream-img img,
+.cake-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.icecream-txt,
+.cake-txt {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+.icecream-txt h3,
+.cake-txt h3 {
+    font-size: 30px;
+    margin-bottom: 1rem;
+}
+
+.icecream-txt p,
+.cake-txt p {
+    font-size: 16px;
+    margin-bottom: 2rem;
+}
+
+.icecream-txt a,
+.cake-txt a {
+    border-radius: 10px;
+    background-color: #fc5a8d;
+    color: white;
+    font-weight: 800;
+    padding: auto 0;
+    text-decoration: none;
+    width: fit-content;
+    padding: 10px 40px;
+}
+
+.testimonial {
+    width: 100%;
+    padding: 3rem;
+    text-align: center;
+}
+
+.testHead {
+    font-size: 40px;
+}
+
+.client-say {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.client {
+    width: 33%;
+}
+
+.client img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.client h3 {
+    margin-top: 10px;
+}
+
+.client p {
+    margin-top: 1rem;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    background-color: #4f2811;
+}
+
+.news-letter {
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+}
+
+.news-letter h3 {
+    color: #ffffff;
+    font-size: 40px;
+}
+
+.sub {
+    margin-top: 10px;
+}
+
+.sub input {
+    width: 240px;
+    height: 30px;
+    outline: none;
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.sub button {
+    width: 100px;
+    height: 30px;
+    font-weight: bold;
+    font-size: 14px;
+    border: none;
+    border-radius: 10px;
+    background-color: #fc5a8d;
+    color: #ffffff;
+}
+
+.foot_body {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: baseline;
+    width: 100%;
+    padding: 3rem;
+    color: white;
+}
+
+.contact, .socials, .pages {
+    display: grid;
+    gap: 10px;
+    
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.foot_body a {
+    color: white;
+    text-decoration: none;
+    transition: color .7s;
+}
+
+.foot_body a:hover {
+    color: #fc5a8d;
+    text-decoration: underline;
+}
+
+.foot_bottom {
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    color: #fc5a8d;
+    font-size: 14px;
+    padding: 10px;
+}
+
+@media (max-width: 875px) {
+    .sidemenu {
+        position: fixed;
+        left: 0;
+        bottom: -100vh;
+        width: 100%;
+        height: fit-content;
+        transition: height .7s;
+        border-radius: 30px 30px 0 0;
+        background-color: #4f2811;
+        z-index: 10;
+        padding: 30px;
+    }
+
+    .sidemenu ul {
+        flex-direction: column;
+    }
+
+    .sidemenu ul li a, .categories span {
+        font-size: 20px;
+    }
+
+    .burger_cart {
+        gap: 20px;
+    }
+
+    .burger {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 5px;
+        background: #fc5a8d;
+    }
+
+    .drop_down {
+        text-align: center;
+    }
+
+    .list-categories {
+        position: static;
+        display: none;
+        transition: display .7s;
+    }
+}
+
+@media (max-width: 630px) {
+    .icecream {
+        flex-direction: column;
+    }
+
+    .cake {
+        flex-direction: column-reverse;
+    }
+
+    .icecream-img,  .cake-img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .cake-txt, .icecream-txt {
+        width: 100%;
+    }
+
+    .client-say {
+        flex-direction: column;
+    }
+
+    .client {
+        width: 100%;
+    }
+}
+
+@media (max-width: 545px) {
+    nav {
+        padding: 0 30px;
+    }
+
+    .testimonial, .icecream, .cake {
+        padding: 3rem 30px;
+    }
+
+    .categories_main {
+        padding: 1rem 30px;
+    }
+
+    .categories_main h3 {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .cat-list ul {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .cat-list li a  {
+        text-align: center;
+    }
+
+    .cat-list li a img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .cat-list {
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 460px) {
+    .bg-img h1 {
+        font-size: 50px;
+        text-align: center;
+    }
+    
+    .bg-img h3 {
+        margin-bottom: 15px;
+    }
+    
+    .btns {
+        flex-direction: column;
+    }
+    
+    .btns button {
+        width: 200px;
+        height: 50px;
+        border: none;
+        border-radius: 10px;
+        background-color: #fc5a8d;
+        color: white;
+        font-weight: 800;
+    }
+
+    .news-letter h3 {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .sub {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1.5rem;
+    }
+
+    .foot_body {
+        grid-template-columns: auto;
+        text-align: center;
+    }
+
+    .socials {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+    }
+    
+}
